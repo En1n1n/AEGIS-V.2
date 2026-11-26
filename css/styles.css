@@ -4176,6 +4176,11 @@ textarea.form-control-lg {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
 }
+.card-img-top{
+  height: 250px;
+  width: 100%;
+  
+}
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -10835,6 +10840,50 @@ html {
   height: 3rem;
   width: 3rem;
   font-size: 1.5rem;
+}
+
+#features h5 {
+    font-weight: 700;
+}
+
+#features p {
+  margin-left: 20px;
+}
+
+.roadmap-step {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 35px;
+}
+
+.roadmap-step h5 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.step-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: #ac0000;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.roadmap-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 40px;
+  width: 5px;
+  height: calc(100% + 20px);
+  background: #ac0000;
 }
 
 .bg-featured-blog {
