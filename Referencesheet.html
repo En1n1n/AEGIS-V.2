@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Style Sheet Display</title>
+  <!-- Links directly to your uploaded CSS file -->
+        <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Brand / Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#colors">Colors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#typography">Typography</a></li>
+          <li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a></li>
+          <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
+          <li class="nav-item"><a class="nav-link" href="#components">Components</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pb-5">
+
+    <!-- HEADER & BREADCRUMB -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Style Guide</li>
+      </ol>
+    </nav>
+
+    <div class="p-4 mb-4 bg-light rounded-3 border">
+      <h1 class="display-5 fw-bold">CSS Framework Display Sheet</h1>
+      <p class="lead">A visual kitchen-sink preview of <code>styles(copy 1).css</code> (Bootstrap v5.2.3 + Start Bootstrap Modern Business overrides).</p>
+    </div>
+
+    <!-- 1. THEME COLORS -->
+    <section id="colors" class="mb-5">
+      <h2 class="border-bottom pb-2 mb-3">1. Theme Colors &amp; Backgrounds</h2>
+      <div class="row g-3 text-center">
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-primary text-white rounded"><code>.bg-primary</code><br><small>(Custom #284673)</small></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-secondary text-white rounded"><code>.bg-secondary</code></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-success text-white rounded"><code>.bg-success</code></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-danger text-white rounded"><code>.bg-danger</code></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-warning text-dark rounded"><code>.bg-warning</code></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-info text-dark rounded"><code>.bg-info</code></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-light text-dark border rounded"><code>.bg-light</code></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 bg-dark text-white rounded"><code>.bg-dark</code></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. TYPOGRAPHY -->
+    <div class="col-md-6">
+      <h1>h1. Heading 1</h1>
+      <h2>h2. Heading 2</h2>
+      <h3>h3. Heading 3</h3>
+      <h4>h4. Heading 4</h4>
+      <h5>h5. Heading 5</h5>
+      <h6>h6. Heading 6</h6>
+    </div>
+    <section id="typography" class="mb-5">
+      <h2 class="border-bottom pb-2 mb-3">2. Typography</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">This is a <code>.lead</code> paragraph that stands out from regular body text.</p>
+          <p>Standard body paragraph with <a href="#">a standard link</a>, <strong>bold text</strong>, <em>italic text</em>, <mark>highlighted text</mark>, and <small>small muted text</small>.</p>
+          <p>Inline code looks like <code>&lt;div class="container"&gt;</code> and keyboard input looks like <kbd>Ctrl + C</kbd>.</p>
+          <blockquote class="blockquote border-start border-4 border-primary ps-3">
+            <p class="mb-1">A well-known quote, contained in a blockquote element.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. BUTTONS & BADGES -->
+    <section id="buttons" class="mb-5">
+      <h2 class="border-bottom pb-2 mb-3">3. Buttons &amp; Badges</h2>
+      
+      <h6>Solid Buttons <small class="text-muted">(Note: <code>.btn-primary</code> has custom crimson styling)</small></h6>
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+      </div>
+
+      <h6>Outline Buttons &amp; Sizes</h6>
+      <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+        <button type="button" class="btn btn-outline-primary">Outline Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Outline Secondary</button>
+        <button type="button" class="btn btn-outline-success">Outline Success</button>
+        <button type="button" class="btn btn-outline-danger">Outline Danger</button>
+        <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+        <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+        <button type="button" class="btn btn-primary" disabled>Disabled</button>
+      </div>
+
+      <h6>Badges</h6>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge text-bg-primary">Primary</span>
+        <span class="badge text-bg-secondary">Secondary</span>
+        <span class="badge text-bg-success">Success</span>
+        <span class="badge text-bg-danger">Danger</span>
+        <span class="badge text-bg-warning">Warning</span>
+        <span class="badge text-bg-info">Info</span>
+        <span class="badge rounded-pill text-bg-dark">Pill Badge</span>
+      </div>
+    </section>
+
+    <!-- 4. ALERTS & PROGRESS -->
+    <section id="alerts" class="mb-5">
+      <h2 class="border-bottom pb-2 mb-3">4. Alerts &amp; Progress Bars</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="alert alert-primary" role="alert">A simple primary alert with <a href="#" class="alert-link">an example link</a>.</div>
+          <div class="alert alert-success" role="alert">A simple success alert—check it out!</div>
+          <div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
+          <div class="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Standard Progress (25%)</label>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 25%">25%</div>
+          </div>
+          <label class="form-label">Striped Success Progress (50%)</label>
+          <div class="progress mb-3">
+            <div class="progress-bar progress-bar-striped bg-success" style="width: 50%">50%</div>
+          </div>
+          <label class="form-label">Animated Striped Warning Progress (75%)</label>
+          <div class="progress mb-3">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark" style="width: 75%">75%</div>
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-4">
+            <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+            <div class="spinner-grow text-danger" role="status"><span class="visually-hidden">Loading...</span></div>
+            <span class="text-muted">Spinners (<code>.spinner-border</code> &amp; <code>.spinner-grow</code>)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FORMS -->
+    <section id="forms" class="mb-5">
+      <h2 class="border-bottom pb-2 mb-3">5. Form Controls</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+          <div class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="inputSelect" class="form-label">Select Menu</label>
+          <select class="form-select" id="inputSelect">
+            <option selected>Open this select menu</option>
+            <option value="1">Option One</option>
+            <option value="2">Option Two</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Input Group</label>
+          <div class="input-group">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Username">
+            <button class="btn btn-outline-secondary" type="button">Check</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Floating Label">
+            <label for="floatingInput">Floating Label Input</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Valid &amp; Invalid States</label>
+          <input type="text" class="form-control is-valid mb-2" value="Valid input (.is-valid)">
+          <input type="text" class="form-control is-invalid" value="Invalid input (.is-invalid)">
+        </div>
+        <div class="col-md-6">
+          <label for="customRange" class="form-label">Range Slider</label>
+          <input type="range" class="form-range" id="customRange">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" checked>
+            <label class="form-check-label" for="check1">Checked checkbox</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="switch1" checked>
+            <label class="form-check-label" for="switch1">Toggle switch (<code>.form-switch</code>)</label>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- 6. CARDS, LIST GROUPS & CUSTOM CLASSES -->
+    <section id="components" class="mb-5">
+      <h2 class="border-bottom pb-2 mb-3">6. Cards, List Groups &amp; Custom Template Classes</h2>
+      <div class="row g-4">
+        
+        <!-- Standard Card -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header fw-bold">Card Header</div>
+            <div class="card-body">
+              <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">★</div>
+              <h5 class="card-title">Custom <code>.feature</code> Icon Box</h5>
+              <p class="card-text">This card demonstrates <code>.card</code>, <code>.shadow-sm</code>, and the custom 3rem <code>.feature</code> icon wrapper defined at the bottom of your CSS.</p>
+              <a href="#" class="btn btn-primary">Card Action</a>
+            </div>
+            <div class="card-footer text-muted">Card Footer</div>
+          </div>
+        </div>
+
+        <!-- List Group -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-header fw-bold">List Group</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item active">Active item (<code>.active</code>)</li>
+              <li class="list-group-item">Standard list item</li>
+              <li class="list-group-item list-group-item-success">Success list item</li>
+              <li class="list-group-item list-group-item-warning">Warning list item</li>
+              <li class="list-group-item disabled">Disabled item</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Custom Featured Blog Class -->
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden">
+            <div class="bg-featured-blog bg-secondary d-flex align-items-center justify-content-center text-white">
+              <span><code>.bg-featured-blog</code> (min-height: 15rem)</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Featured Blog Layout</h5>
+              <p class="card-text">Designed to hold a centered, cover-sized background image.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. TABLES & PAGINATION -->
+    <section id="tables" class="mb-5">
+      <h2 class="border-bottom pb-2 mb-3">7. Tables, Nav Tabs &amp; Pagination</h2>
+      
+      <ul class="nav nav-tabs mb-3">
+        <li class="nav-item"><a class="nav-link active" href="#">Active Tab</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Second Tab</a></li>
+        <li class="nav-item"><a class="nav-link disabled" href="#">Disabled Tab</a></li>
+      </ul>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Component</th>
+              <th>Class Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Striped Row</td>
+              <td><code>.table-striped</code></td>
+              <td><span class="badge text-bg-success">Active</span></td>
+            </tr>
+            <tr class="table-primary">
+              <td>2</td>
+              <td>Contextual Primary Row</td>
+              <td><code>.table-primary</code></td>
+              <td><span class="badge text-bg-primary">Highlighted</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Hoverable Row</td>
+              <td><code>.table-hover</code></td>
+              <td><span class="badge text-bg-secondary">Default</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </section>
+
+  </div>
+
+  <!-- Optional Bootstrap JS Bundle (for interactive dropdowns, navbar toggler, and accordions) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
